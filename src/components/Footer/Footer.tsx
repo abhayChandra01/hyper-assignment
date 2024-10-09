@@ -1,6 +1,6 @@
 import FooterLogo from "@/assets/svgs/Logo/FooterLogo";
 import React from "react";
-import { FaCheck, FaCode } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Footer() {
