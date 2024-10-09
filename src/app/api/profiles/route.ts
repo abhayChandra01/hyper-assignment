@@ -23,7 +23,7 @@ const profiles = [
   },
   {
     name: "Anika",
-    category: "2y+",
+    category: "3y+",
     skills: [
       "웹 개발",
       "UI/UX 디자인",
