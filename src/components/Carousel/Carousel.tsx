@@ -5,6 +5,12 @@ import avatarImage from "@/assets/Ellipse 12.png";
 import Image from "next/image";
 import { BsCurrencyDollar } from "react-icons/bs";
 
+type Profile = {
+  name: string;
+  category: string;
+  skills: string[];
+};
+
 const Card: React.FC<{
   backgroundCard: boolean;
   profile: {
@@ -62,7 +68,7 @@ const Card: React.FC<{
   );
 };
 
-const Carousel: React.FC<{ profiles: any[] }> = ({ profiles }) => {
+const Carousel: React.FC<{ profiles: Profile[] }> = ({ profiles }) => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const [isSliding, setIsSliding] = React.useState(false);
 
