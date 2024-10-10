@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import React from "react";
-import { FaCheck } from "react-icons/fa";
 
 const AnimatedSection: React.FC = () => {
   const fadeInUp = {
