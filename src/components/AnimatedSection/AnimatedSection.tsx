@@ -28,54 +28,52 @@ const AnimatedSection: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row lg:gap-10">
-      <div className="w-full lg:w-[50%] flex flex-col gap-2 xl:gap-5">
-        <motion.h1
-          variants={fadeInUp}
-          initial="initial"
-          animate="animate"
-          transition={{ duration: 0.5 }}
-          className="text-[36px] sm:text-[40px] xl:text-[48px] font-[900] leading-[62.4px]"
-        >
-          최고의 실력을 가진
-          <br className="hidden sm:block" /> 외국인 인재를 찾고 계신가요?
-        </motion.h1>
+    <div className="w-full lg:w-[50%] flex flex-col gap-2 xl:gap-5">
+      <motion.h1
+        variants={fadeInUp}
+        initial="initial"
+        animate="animate"
+        transition={{ duration: 0.5 }}
+        className="text-[36px] sm:text-[40px] xl:text-[48px] font-[900] leading-[62.4px]"
+      >
+        최고의 실력을 가진
+        <br className="hidden sm:block" /> 외국인 인재를 찾고 계신가요?
+      </motion.h1>
 
-        <motion.h2
-          variants={fadeInUp}
-          initial="initial"
-          animate="animate"
-          transition={{ duration: 0.5 }}
-          className="text-[16px] xl:text-[24px] font-[900] leading-[34px]"
-        >
-          법률 및 인사관리 부담없이
-          <br className="hidden sm:block" /> 1주일 이내에 원격으로 채용해보세요.
-        </motion.h2>
+      <motion.h2
+        variants={fadeInUp}
+        initial="initial"
+        animate="animate"
+        transition={{ duration: 0.5 }}
+        className="text-[16px] xl:text-[24px] font-[900] leading-[34px]"
+      >
+        법률 및 인사관리 부담없이
+        <br className="hidden sm:block" /> 1주일 이내에 원격으로 채용해보세요.
+      </motion.h2>
 
-        <motion.div
-          className="gap-4 justify-between max-w-[579px] hidden lg:flex"
-          initial="initial"
-          animate="animate"
-        >
-          {list?.map((item) => (
-            <motion.div
-              key={item?.id}
-              variants={fadeInUp}
-              initial="initial"
-              animate="animate"
-              transition={{ duration: 0.5 }}
-              className="border-t border-[#fff] pt-2 max-w-[161px]"
-            >
-              <p className="text-[16px] xl:text-[18px] font-[900]">
-                {item?.title}
-              </p>
-              <p className="text-[14px] xl:text-[16px] font-[900]">
-                {item?.description}
-              </p>
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
+      <motion.div
+        className="gap-4 justify-between max-w-[579px] hidden lg:flex"
+        initial="initial"
+        animate="animate"
+      >
+        {list?.map((item) => (
+          <motion.div
+            key={item?.id}
+            variants={fadeInUp}
+            initial="initial"
+            animate="animate"
+            transition={{ duration: 0.5 }}
+            className="border-t border-[#fff] pt-2 max-w-[161px]"
+          >
+            <p className="text-[16px] xl:text-[18px] font-[900]">
+              {item?.title}
+            </p>
+            <p className="text-[14px] xl:text-[16px] font-[900]">
+              {item?.description}
+            </p>
+          </motion.div>
+        ))}
+      </motion.div>
     </div>
   );
 };

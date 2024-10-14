@@ -20,9 +20,11 @@ const HomePage = async () => {
 
   return (
     <div>
-      <AnimatedSection />
-      <div className="w-full lg:w-[50%] min-h-[450px] sm:min-h-[500px]">
-        <Carousel profiles={profiles} />
+      <div className="flex flex-col lg:flex-row lg:gap-10">
+        <AnimatedSection />
+        <div className="w-full lg:w-[50%] min-h-[450px] sm:min-h-[500px]">
+          <Carousel profiles={profiles} />
+        </div>
       </div>
       <div className="hidden lg:block mt-20 xl:mt-14">
         <HorizontalSlider />
